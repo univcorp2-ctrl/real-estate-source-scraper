@@ -11,8 +11,8 @@ from typing import Iterable
 import httpx
 from openpyxl import Workbook
 
-from realestate_scraper.extract import discover_links, extract_listing_from_html
 from realestate_scraper.models import Listing, Source
+from realestate_scraper.plugins import get_plugin
 from realestate_scraper.robots import RobotsCache, RobotsResult
 
 DEFAULT_USER_AGENT = "RealEstateResearchBot/0.1 (+https://github.com/)"
@@ -68,6 +68,7 @@ class RealEstateScraper:
         listings: list[Listing] = []
         seen_urls: set[str] = set()
         for source in sources:
+            plugin = get_plugin(source.id)
             for seed_url in source.seed_urls:
                 if len(listings) >= limit:
                     return listings
@@ -78,8 +79,8 @@ class RealEstateScraper:
                 except httpx.HTTPError:
                     continue
                 time.sleep(self.delay_seconds)
-                detail_links = discover_links(seed_html, seed_url, source.item_url_patterns)
-                if not detail_links:
+                detail_links = plugin.discover(seed_html, seed_url, source)
+                if not detail_links and source.scrape_strategy not in {"api_or_data_download", "metadata_only"}:
                     detail_links = [seed_url]
                 for link in detail_links:
                     if len(listings) >= limit:
@@ -93,7 +94,7 @@ class RealEstateScraper:
                         html = seed_html if link == seed_url else self._fetch(link)
                     except httpx.HTTPError:
                         continue
-                    listings.append(extract_listing_from_html(html, link, source))
+                    listings.append(plugin.extract(html, link, source))
                     time.sleep(self.delay_seconds)
         return listings
 
