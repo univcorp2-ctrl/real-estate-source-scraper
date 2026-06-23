@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img" aria-label="Real estate scraping architecture">
+  <rect width="1400" height="760" fill="#f8fbff"/>
+  <text x="60" y="70" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#10345c">Real Estate Source Scraper Architecture</text>
+  <text x="60" y="108" font-family="Arial, sans-serif" font-size="18" fill="#456">GPT Image latest model 用に設計した1枚図: 調査・robots監査・低負荷取得・正規化・レビュー資料化の流れ</text>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#0b2d4d" flood-opacity="0.18"/></filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2,2 L10,6 L2,10" fill="#2368a2"/></marker>
+  </defs>
+  <g font-family="Arial, sans-serif">
+    <g filter="url(#shadow)">
+      <rect x="60" y="170" width="210" height="135" rx="20" fill="#eaf5ff" stroke="#2f80c8" stroke-width="2"/>
+      <text x="85" y="215" font-size="22" font-weight="700" fill="#0c4d83">1. Source Inventory</text>
+      <text x="85" y="250" font-size="15" fill="#274">data/sources.yml</text>
+      <text x="85" y="275" font-size="15" fill="#274">sources.global.csv</text>
+    </g>
+    <g filter="url(#shadow)">
+      <rect x="325" y="170" width="210" height="135" rx="20" fill="#ecfff4" stroke="#24a064" stroke-width="2"/>
+      <text x="350" y="215" font-size="22" font-weight="700" fill="#0b6f3d">2. Site Analysis</text>
+      <text x="350" y="250" font-size="15" fill="#274">robots.txt summary</text>
+      <text x="350" y="275" font-size="15" fill="#274">HTML structure scan</text>
+    </g>
+    <g filter="url(#shadow)">
+      <rect x="590" y="170" width="210" height="135" rx="20" fill="#fff8e6" stroke="#d99a20" stroke-width="2"/>
+      <text x="615" y="215" font-size="22" font-weight="700" fill="#9a6500">3. Plugin Routing</text>
+      <text x="615" y="250" font-size="15" fill="#684">site-specific parser</text>
+      <text x="615" y="275" font-size="15" fill="#684">generic fallback</text>
+    </g>
+    <g filter="url(#shadow)">
+      <rect x="855" y="170" width="210" height="135" rx="20" fill="#f4efff" stroke="#7b61d1" stroke-width="2"/>
+      <text x="880" y="215" font-size="22" font-weight="700" fill="#4d36a3">4. Low-load Fetch</text>
+      <text x="880" y="250" font-size="15" fill="#514">robots enforced</text>
+      <text x="880" y="275" font-size="15" fill="#514">delay and limits</text>
+    </g>
+    <g filter="url(#shadow)">
+      <rect x="1120" y="170" width="210" height="135" rx="20" fill="#eef7f7" stroke="#2a9d9d" stroke-width="2"/>
+      <text x="1145" y="215" font-size="22" font-weight="700" fill="#0f6666">5. Outputs</text>
+      <text x="1145" y="250" font-size="15" fill="#155">JSONL / CSV / Excel</text>
+      <text x="1145" y="275" font-size="15" fill="#155">site analysis docs</text>
+    </g>
+    <path d="M270 237 L320 237" stroke="#2368a2" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M535 237 L585 237" stroke="#2368a2" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M800 237 L850 237" stroke="#2368a2" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M1065 237 L1115 237" stroke="#2368a2" stroke-width="4" marker-end="url(#arrow)"/>
+    <g filter="url(#shadow)">
+      <rect x="120" y="410" width="360" height="210" rx="24" fill="#ffffff" stroke="#d6e4f0" stroke-width="2"/>
+      <text x="150" y="455" font-size="24" font-weight="700" fill="#10345c">Review Gate</text>
+      <text x="150" y="495" font-size="17" fill="#344">needs_review は自動実行から除外</text>
+      <text x="150" y="525" font-size="17" fill="#344">official_public_data と pilot を優先</text>
+      <text x="150" y="555" font-size="17" fill="#344">ログイン突破・CAPTCHA回避なし</text>
+      <text x="150" y="585" font-size="17" fill="#344">公式API・許諾・CSV提供を優先</text>
+    </g>
+    <g filter="url(#shadow)">
+      <rect x="535" y="410" width="360" height="210" rx="24" fill="#ffffff" stroke="#d6e4f0" stroke-width="2"/>
+      <text x="565" y="455" font-size="24" font-weight="700" fill="#10345c">Implemented Plugins</text>
+      <text x="565" y="495" font-size="17" fill="#344">BIT / NTA / MOF / MLIT</text>
+      <text x="565" y="525" font-size="17" fill="#344">SUUMO / HOME'S / ATHOME</text>
+      <text x="565" y="555" font-size="17" fill="#344">Yahoo / Rakumachi / Kenbiya / UR</text>
+      <text x="565" y="585" font-size="17" fill="#344">International generic static parser</text>
+    </g>
+    <g filter="url(#shadow)">
+      <rect x="950" y="410" width="360" height="210" rx="24" fill="#ffffff" stroke="#d6e4f0" stroke-width="2"/>
+      <text x="980" y="455" font-size="24" font-weight="700" fill="#10345c">Reviewer Outputs</text>
+      <text x="980" y="495" font-size="17" fill="#344">docs/site-analysis.md</text>
+      <text x="980" y="525" font-size="17" fill="#344">outputs/site-analysis/*.json</text>
+      <text x="980" y="555" font-size="17" fill="#344">outputs/audit.csv</text>
+      <text x="980" y="585" font-size="17" fill="#344">outputs/listings.xlsx</text>
+    </g>
+  </g>
+</svg>
