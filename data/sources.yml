@@ -1,0 +1,1191 @@
+version: 1
+updated_at: "2026-06-23"
+sources:
+  - id: suumo
+    name: SUUMO
+    base_url: https://suumo.jp/
+    country: JP
+    language: ja
+    categories: [residential-sale, residential-rent, land]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 1
+    seed_urls: ["https://suumo.jp/"]
+    item_url_patterns: ["/chintai/", "/jj/", "/ms/", "/ikkodate/", "/tochi/"]
+    notes: "全国大手ポータル。個別許諾やAPI/データ提供契約の検討対象。"
+  - id: lifull-homes
+    name: LIFULL HOME'S
+    base_url: https://www.homes.co.jp/
+    country: JP
+    language: ja
+    categories: [residential-sale, residential-rent, investment, vacant-home]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 1
+    seed_urls: ["https://www.homes.co.jp/"]
+    item_url_patterns: ["/chintai/", "/mansion/", "/kodate/", "/tochi/", "/toushi/"]
+    notes: "大手住宅情報サイト。空き家バンクや不動産投資情報も調査対象。"
+  - id: athome
+    name: アットホーム
+    base_url: https://www.athome.co.jp/
+    country: JP
+    language: ja
+    categories: [residential-sale, residential-rent, land, commercial, investment]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 1
+    seed_urls: ["https://www.athome.co.jp/"]
+    item_url_patterns: ["/chintai/", "/mansion/", "/kodate/", "/tochi/", "/toushi/", "/office/"]
+    notes: "賃貸・売買・事業用・投資を横断。"
+  - id: yahoo-realestate
+    name: Yahoo!不動産
+    base_url: https://realestate.yahoo.co.jp/
+    country: JP
+    language: ja
+    categories: [residential-sale, residential-rent, market-data]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 1
+    seed_urls: ["https://realestate.yahoo.co.jp/"]
+    item_url_patterns: ["/rent/", "/used/", "/new/", "/land/"]
+    notes: "住宅情報、賃貸、売買、相場導線。"
+  - id: o-uccino
+    name: O-uccino
+    base_url: https://www.o-uccino.com/
+    country: JP
+    language: ja
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 2
+    seed_urls: ["https://www.o-uccino.com/"]
+    item_url_patterns: ["/chintai/", "/mansion/", "/ikkodate/", "/tochi/"]
+    notes: "住宅ポータル。"
+  - id: chintai-net
+    name: CHINTAI
+    base_url: https://www.chintai.net/
+    country: JP
+    language: ja
+    categories: [residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 2
+    seed_urls: ["https://www.chintai.net/"]
+    item_url_patterns: ["/detail/", "/bk-"]
+    notes: "賃貸特化。"
+  - id: apamanshop
+    name: アパマンショップ
+    base_url: https://www.apamanshop.com/
+    country: JP
+    language: ja
+    categories: [residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 2
+    seed_urls: ["https://www.apamanshop.com/"]
+    item_url_patterns: ["/chintai/", "/bkn/"]
+    notes: "賃貸仲介。"
+  - id: able
+    name: エイブル
+    base_url: https://www.able.co.jp/
+    country: JP
+    language: ja
+    categories: [residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 2
+    seed_urls: ["https://www.able.co.jp/"]
+    item_url_patterns: ["/detail/", "/chintai/"]
+    notes: "賃貸仲介。"
+  - id: eheya
+    name: いい部屋ネット
+    base_url: https://www.eheya.net/
+    country: JP
+    language: ja
+    categories: [residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 2
+    seed_urls: ["https://www.eheya.net/"]
+    item_url_patterns: ["/detail/", "/room/"]
+    notes: "賃貸。"
+  - id: homemate
+    name: ホームメイト
+    base_url: https://www.homemate.co.jp/
+    country: JP
+    language: ja
+    categories: [residential-rent, residential-sale]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 2
+    seed_urls: ["https://www.homemate.co.jp/"]
+    item_url_patterns: ["/chintai/", "/estate/"]
+    notes: "賃貸・売買。"
+  - id: housecom
+    name: ハウスコム
+    base_url: https://www.housecom.jp/
+    country: JP
+    language: ja
+    categories: [residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 3
+    seed_urls: ["https://www.housecom.jp/"]
+    item_url_patterns: ["/detail/", "/chintai/"]
+    notes: "賃貸。"
+  - id: goodrooms
+    name: goodroom
+    base_url: https://www.goodrooms.jp/
+    country: JP
+    language: ja
+    categories: [residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 3
+    seed_urls: ["https://www.goodrooms.jp/"]
+    item_url_patterns: ["/detail/", "/tokyo/"]
+    notes: "リノベ・デザイン賃貸。"
+  - id: ur-net
+    name: UR賃貸住宅
+    base_url: https://www.ur-net.go.jp/chintai/
+    country: JP
+    language: ja
+    categories: [residential-rent, public-housing]
+    review_status: pilot
+    scrape_strategy: generic_html
+    priority: 2
+    seed_urls: ["https://www.ur-net.go.jp/chintai/"]
+    item_url_patterns: ["/chintai/", "/kanto/", "/kansai/"]
+    notes: "公的住宅寄り。必ずrobots監査後に低負荷実行。"
+  - id: nifty-realestate
+    name: ニフティ不動産
+    base_url: https://myhome.nifty.com/
+    country: JP
+    language: ja
+    categories: [aggregator, residential-rent, residential-sale]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 3
+    seed_urls: ["https://myhome.nifty.com/"]
+    item_url_patterns: ["/rent/", "/chuko/", "/shinchiku/", "/tochi/"]
+    notes: "横断検索。重複に注意。"
+  - id: sumaity
+    name: スマイティ
+    base_url: https://sumaity.com/
+    country: JP
+    language: ja
+    categories: [aggregator, residential-rent, residential-sale]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 3
+    seed_urls: ["https://sumaity.com/"]
+    item_url_patterns: ["/chintai/", "/mansion/", "/kodate/"]
+    notes: "住宅横断。"
+  - id: door-chintai
+    name: DOOR賃貸
+    base_url: https://chintai.door.ac/
+    country: JP
+    language: ja
+    categories: [aggregator, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 3
+    seed_urls: ["https://chintai.door.ac/"]
+    item_url_patterns: ["/detail/", "/rent/"]
+    notes: "賃貸横断。"
+  - id: ielove
+    name: いえらぶ物件検索
+    base_url: https://www.ielove.co.jp/
+    country: JP
+    language: ja
+    categories: [residential-rent, residential-sale]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 3
+    seed_urls: ["https://www.ielove.co.jp/"]
+    item_url_patterns: ["/chintai/", "/sale/"]
+    notes: "不動産会社向け媒体も含む。"
+  - id: lifull-akiyabank
+    name: LIFULL HOME'S 空き家バンク
+    base_url: https://www.homes.co.jp/akiyabank/
+    country: JP
+    language: ja
+    categories: [vacant-home, public-data]
+    review_status: pilot
+    scrape_strategy: generic_html
+    priority: 1
+    seed_urls: ["https://www.homes.co.jp/akiyabank/"]
+    item_url_patterns: ["/akiyabank/b-"]
+    notes: "自治体空き家情報。個別自治体条件も確認。"
+  - id: iju-join
+    name: いいかも地方暮らし
+    base_url: https://www.iju-join.jp/
+    country: JP
+    language: ja
+    categories: [vacant-home, relocation]
+    review_status: research_only
+    scrape_strategy: research_only
+    priority: 4
+    seed_urls: ["https://www.iju-join.jp/"]
+    item_url_patterns: []
+    notes: "移住情報。物件DBではなく導線調査用。"
+  - id: rakumachi
+    name: 楽待
+    base_url: https://www.rakumachi.jp/
+    country: JP
+    language: ja
+    categories: [investment, income-property]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 1
+    seed_urls: ["https://www.rakumachi.jp/syuuekibukken/"]
+    item_url_patterns: ["/syuuekibukken/", "/property/"]
+    notes: "収益物件特化。投資指標抽出の優先対象。"
+  - id: kenbiya
+    name: 健美家
+    base_url: https://www.kenbiya.com/
+    country: JP
+    language: ja
+    categories: [investment, income-property]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 1
+    seed_urls: ["https://www.kenbiya.com/"]
+    item_url_patterns: ["/pp", "/income/"]
+    notes: "収益物件・不動産投資情報。"
+  - id: rals-investment
+    name: 不動産投資連合隊
+    base_url: https://www.rals.net/
+    country: JP
+    language: ja
+    categories: [investment, income-property]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 2
+    seed_urls: ["https://www.rals.net/"]
+    item_url_patterns: ["/invest/", "/detail/"]
+    notes: "収益物件。"
+  - id: nomu-pro
+    name: ノムコム・プロ
+    base_url: https://www.nomu.com/pro/
+    country: JP
+    language: ja
+    categories: [investment, commercial, income-property]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 2
+    seed_urls: ["https://www.nomu.com/pro/"]
+    item_url_patterns: ["/pro/", "/bk/"]
+    notes: "野村不動産系の投資・事業用。"
+  - id: home4u-land
+    name: HOME4U土地活用
+    base_url: https://land.home4u.jp/
+    country: JP
+    language: ja
+    categories: [investment-info, land-use]
+    review_status: research_only
+    scrape_strategy: research_only
+    priority: 4
+    seed_urls: ["https://land.home4u.jp/"]
+    item_url_patterns: []
+    notes: "土地活用・不動産投資記事。物件一覧ではない。"
+  - id: homes-toushi
+    name: LIFULL HOME'S 不動産投資
+    base_url: https://toushi.homes.co.jp/
+    country: JP
+    language: ja
+    categories: [investment, income-property]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 1
+    seed_urls: ["https://toushi.homes.co.jp/"]
+    item_url_patterns: ["/building/", "/mansion/", "/b-"]
+    notes: "不動産投資ポータル。"
+  - id: athome-toushi
+    name: アットホーム 投資用物件
+    base_url: https://www.athome.co.jp/toushi/
+    country: JP
+    language: ja
+    categories: [investment, income-property]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 2
+    seed_urls: ["https://www.athome.co.jp/toushi/"]
+    item_url_patterns: ["/toushi/"]
+    notes: "アットホーム投資カテゴリ。"
+  - id: cbre-japan
+    name: CBRE Japan Property Search
+    base_url: https://www.cbre-propertysearch.jp/
+    country: JP
+    language: ja
+    categories: [commercial, office, logistics, retail]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 2
+    seed_urls: ["https://www.cbre-propertysearch.jp/"]
+    item_url_patterns: ["/property/", "/office/", "/logistics/"]
+    notes: "商業不動産。"
+  - id: e-miki
+    name: 三鬼商事オフィス検索
+    base_url: https://www.e-miki.com/
+    country: JP
+    language: ja
+    categories: [commercial, office]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 2
+    seed_urls: ["https://www.e-miki.com/"]
+    item_url_patterns: ["/office/", "/detail/"]
+    notes: "オフィス賃貸。"
+  - id: officee
+    name: officee
+    base_url: https://officee.jp/
+    country: JP
+    language: ja
+    categories: [commercial, office]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 2
+    seed_urls: ["https://officee.jp/"]
+    item_url_patterns: ["/detail/", "/area/"]
+    notes: "オフィス賃貸。"
+  - id: office-navi
+    name: オフィスナビ
+    base_url: https://www.office-navi.jp/
+    country: JP
+    language: ja
+    categories: [commercial, office]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 2
+    seed_urls: ["https://www.office-navi.jp/"]
+    item_url_patterns: ["/building/", "/result/"]
+    notes: "オフィス検索。"
+  - id: birusaku
+    name: ビルサク
+    base_url: https://birusaku.jp/
+    country: JP
+    language: ja
+    categories: [commercial, office]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 3
+    seed_urls: ["https://birusaku.jp/"]
+    item_url_patterns: ["/detail/", "/office/"]
+    notes: "賃貸オフィス。"
+  - id: temposmart
+    name: テンポスマート
+    base_url: https://www.temposmart.jp/
+    country: JP
+    language: ja
+    categories: [commercial, retail]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 3
+    seed_urls: ["https://www.temposmart.jp/"]
+    item_url_patterns: ["/estates/", "/detail/"]
+    notes: "店舗物件。"
+  - id: sonomama
+    name: 店舗そのままオークション
+    base_url: https://sonomama.net/
+    country: JP
+    language: ja
+    categories: [commercial, retail, inuki]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 3
+    seed_urls: ["https://sonomama.net/"]
+    item_url_patterns: ["/store/", "/detail/"]
+    notes: "店舗・居抜き。"
+  - id: inuki-info
+    name: 居抜き情報.COM
+    base_url: https://www.inuki-info.com/
+    country: JP
+    language: ja
+    categories: [commercial, retail, inuki]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 3
+    seed_urls: ["https://www.inuki-info.com/"]
+    item_url_patterns: ["/property/", "/detail/"]
+    notes: "居抜き店舗。"
+  - id: bit-courts
+    name: BIT 不動産競売物件情報サイト
+    base_url: https://www.bit.courts.go.jp/app/
+    country: JP
+    language: ja
+    categories: [public-auction, foreclosure, government]
+    review_status: official_public_data
+    scrape_strategy: government_public_html
+    priority: 1
+    seed_urls: ["https://www.bit.courts.go.jp/app/"]
+    item_url_patterns: ["/app/", "/info/"]
+    notes: "裁判所競売情報。低負荷・監査ログ必須。"
+  - id: nta-koubai
+    name: 国税庁 公売情報
+    base_url: https://www.koubai.nta.go.jp/
+    country: JP
+    language: ja
+    categories: [public-auction, government]
+    review_status: official_public_data
+    scrape_strategy: government_public_html
+    priority: 1
+    seed_urls: ["https://www.koubai.nta.go.jp/"]
+    item_url_patterns: ["/auctionx/", "/public/"]
+    notes: "国税庁の公売情報。"
+  - id: ksi-kankocho
+    name: KSI官公庁オークション
+    base_url: https://kankocho.jp/
+    country: JP
+    language: ja
+    categories: [public-auction, government]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 2
+    seed_urls: ["https://kankocho.jp/"]
+    item_url_patterns: ["/auction/", "/lot/"]
+    notes: "官公庁オークション。"
+  - id: mof-national-property
+    name: 財務省 国有財産売却
+    base_url: https://www.mof.go.jp/policy/national_property/list/
+    country: JP
+    language: ja
+    categories: [government, public-sale, land]
+    review_status: official_public_data
+    scrape_strategy: government_public_html
+    priority: 1
+    seed_urls: ["https://www.mof.go.jp/policy/national_property/list/"]
+    item_url_patterns: ["/national_property/"]
+    notes: "国有財産の売却情報。"
+  - id: mlit-reinfolib
+    name: 不動産情報ライブラリ
+    base_url: https://www.reinfolib.mlit.go.jp/
+    country: JP
+    language: ja
+    categories: [market-data, government, transaction-price]
+    review_status: official_public_data
+    scrape_strategy: api_or_data_download
+    priority: 1
+    seed_urls: ["https://www.reinfolib.mlit.go.jp/"]
+    item_url_patterns: []
+    notes: "国土交通省系の価格・地価・周辺情報。API/公式DL優先。"
+  - id: reins-market
+    name: REINS Market Information
+    base_url: https://www.contract.reins.or.jp/
+    country: JP
+    language: ja
+    categories: [market-data, transaction-price]
+    review_status: official_public_data
+    scrape_strategy: metadata_only
+    priority: 2
+    seed_urls: ["https://www.contract.reins.or.jp/"]
+    item_url_patterns: []
+    notes: "成約価格情報。利用条件を確認し、可能なら手動DL/公式導線。"
+  - id: mlit-landprice
+    name: 地価公示・都道府県地価調査
+    base_url: https://www.land.mlit.go.jp/landPrice/
+    country: JP
+    language: ja
+    categories: [market-data, land-price, government]
+    review_status: official_public_data
+    scrape_strategy: api_or_data_download
+    priority: 1
+    seed_urls: ["https://www.land.mlit.go.jp/landPrice/"]
+    item_url_patterns: []
+    notes: "地価情報。公式データ取得優先。"
+  - id: jreit
+    name: J-REIT.jp
+    base_url: https://j-reit.jp/
+    country: JP
+    language: ja
+    categories: [reit, investment-info]
+    review_status: official_public_data
+    scrape_strategy: metadata_only
+    priority: 2
+    seed_urls: ["https://j-reit.jp/"]
+    item_url_patterns: []
+    notes: "REIT市場情報。"
+  - id: japan-reit-com
+    name: JAPAN-REIT.COM
+    base_url: https://www.japan-reit.com/
+    country: JP
+    language: ja
+    categories: [reit, investment-info]
+    review_status: needs_review
+    scrape_strategy: metadata_only
+    priority: 3
+    seed_urls: ["https://www.japan-reit.com/"]
+    item_url_patterns: []
+    notes: "REIT情報・ニュース。"
+  - id: realestate-japan
+    name: Real Estate Japan
+    base_url: https://realestate.co.jp/
+    country: JP
+    language: en
+    categories: [residential-rent, residential-sale, international]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 3
+    seed_urls: ["https://realestate.co.jp/"]
+    item_url_patterns: ["/en/rent/", "/en/forsale/", "/apartment/"]
+    notes: "外国人向け日本物件。"
+  - id: gaijinpot-apartments
+    name: GaijinPot Apartments
+    base_url: https://apartments.gaijinpot.com/
+    country: JP
+    language: en
+    categories: [residential-rent, international]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 3
+    seed_urls: ["https://apartments.gaijinpot.com/"]
+    item_url_patterns: ["/en/rent/", "/apartment/"]
+    notes: "外国人向け賃貸。"
+  - id: wagaya-japan
+    name: Wagaya Japan
+    base_url: https://wagaya-japan.com/
+    country: JP
+    language: en
+    categories: [residential-rent, residential-sale, international]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 3
+    seed_urls: ["https://wagaya-japan.com/"]
+    item_url_patterns: ["/en/chintai/", "/en/buy/"]
+    notes: "外国人向け住宅。"
+  - id: plaza-homes
+    name: PLAZA HOMES
+    base_url: https://www.realestate-tokyo.com/
+    country: JP
+    language: en
+    categories: [luxury, residential-rent, residential-sale]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 3
+    seed_urls: ["https://www.realestate-tokyo.com/"]
+    item_url_patterns: ["/rent/", "/sale/", "/property/"]
+    notes: "東京高級賃貸・売買。"
+  - id: ken-corporation
+    name: KEN Corporation
+    base_url: https://www.kencorp.com/
+    country: JP
+    language: ja
+    categories: [luxury, residential-rent, residential-sale]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 3
+    seed_urls: ["https://www.kencorp.com/"]
+    item_url_patterns: ["/housing/", "/rent/", "/sale/"]
+    notes: "高級住宅。"
+  - id: japan-property-central
+    name: Japan Property Central
+    base_url: https://japanpropertycentral.com/
+    country: JP
+    language: en
+    categories: [investment-info, news, residential-sale]
+    review_status: research_only
+    scrape_strategy: research_only
+    priority: 4
+    seed_urls: ["https://japanpropertycentral.com/"]
+    item_url_patterns: []
+    notes: "日本不動産ニュース・投資情報。"
+  - id: zillow
+    name: Zillow
+    base_url: https://www.zillow.com/
+    country: US
+    language: en
+    categories: [residential-sale, residential-rent, market-data]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.zillow.com/"]
+    item_url_patterns: ["/homedetails/", "/apartments/"]
+    notes: "米国大手。API/提携を優先。"
+  - id: realtor
+    name: Realtor.com
+    base_url: https://www.realtor.com/
+    country: US
+    language: en
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.realtor.com/"]
+    item_url_patterns: ["/realestateandhomes-detail/", "/apartments/"]
+    notes: "米国住宅。"
+  - id: redfin
+    name: Redfin
+    base_url: https://www.redfin.com/
+    country: US
+    language: en
+    categories: [residential-sale, market-data]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.redfin.com/"]
+    item_url_patterns: ["/home/", "/city/"]
+    notes: "米国住宅・相場。"
+  - id: trulia
+    name: Trulia
+    base_url: https://www.trulia.com/
+    country: US
+    language: en
+    categories: [residential-sale, residential-rent, neighborhood-data]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.trulia.com/"]
+    item_url_patterns: ["/home/", "/for_rent/"]
+    notes: "米国住宅。"
+  - id: homes-com
+    name: Homes.com
+    base_url: https://www.homes.com/
+    country: US
+    language: en
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.homes.com/"]
+    item_url_patterns: ["/property/", "/apartments-for-rent/"]
+    notes: "米国住宅。"
+  - id: apartments-com
+    name: Apartments.com
+    base_url: https://www.apartments.com/
+    country: US
+    language: en
+    categories: [residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.apartments.com/"]
+    item_url_patterns: ["/apartments/", "/property/"]
+    notes: "米国賃貸。"
+  - id: loopnet
+    name: LoopNet
+    base_url: https://www.loopnet.com/
+    country: US
+    language: en
+    categories: [commercial, investment]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.loopnet.com/"]
+    item_url_patterns: ["/Listing/", "/property/"]
+    notes: "商業不動産。"
+  - id: crexi
+    name: Crexi
+    base_url: https://www.crexi.com/
+    country: US
+    language: en
+    categories: [commercial, investment]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.crexi.com/"]
+    item_url_patterns: ["/properties/", "/lease/properties/"]
+    notes: "商業不動産・投資。"
+  - id: rightmove
+    name: Rightmove
+    base_url: https://www.rightmove.co.uk/
+    country: GB
+    language: en
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.rightmove.co.uk/"]
+    item_url_patterns: ["/properties/", "/property-for-sale/"]
+    notes: "英国住宅。"
+  - id: zoopla
+    name: Zoopla
+    base_url: https://www.zoopla.co.uk/
+    country: GB
+    language: en
+    categories: [residential-sale, residential-rent, market-data]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.zoopla.co.uk/"]
+    item_url_patterns: ["/for-sale/details/", "/to-rent/details/"]
+    notes: "英国住宅・相場。"
+  - id: onthemarket
+    name: OnTheMarket
+    base_url: https://www.onthemarket.com/
+    country: GB
+    language: en
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.onthemarket.com/"]
+    item_url_patterns: ["/details/", "/for-sale/"]
+    notes: "英国住宅。"
+  - id: idealista
+    name: Idealista
+    base_url: https://www.idealista.com/
+    country: ES
+    language: es
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.idealista.com/"]
+    item_url_patterns: ["/inmueble/", "/venta-viviendas/"]
+    notes: "欧州大手。"
+  - id: fotocasa
+    name: Fotocasa
+    base_url: https://www.fotocasa.es/
+    country: ES
+    language: es
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.fotocasa.es/"]
+    item_url_patterns: ["/es/comprar/", "/es/alquiler/"]
+    notes: "スペイン住宅。"
+  - id: seloger
+    name: SeLoger
+    base_url: https://www.seloger.com/
+    country: FR
+    language: fr
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.seloger.com/"]
+    item_url_patterns: ["/annonces/", "/immobilier/"]
+    notes: "フランス住宅。"
+  - id: bienici
+    name: Bien'ici
+    base_url: https://www.bienici.com/
+    country: FR
+    language: fr
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.bienici.com/"]
+    item_url_patterns: ["/annonce/", "/recherche/"]
+    notes: "フランス住宅。"
+  - id: immobilienscout24
+    name: ImmobilienScout24
+    base_url: https://www.immobilienscout24.de/
+    country: DE
+    language: de
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.immobilienscout24.de/"]
+    item_url_patterns: ["/expose/", "/wohnung-mieten/"]
+    notes: "ドイツ住宅。"
+  - id: immowelt
+    name: Immowelt
+    base_url: https://www.immowelt.de/
+    country: DE
+    language: de
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.immowelt.de/"]
+    item_url_patterns: ["/expose/", "/suche/"]
+    notes: "ドイツ住宅。"
+  - id: funda
+    name: Funda
+    base_url: https://www.funda.nl/
+    country: NL
+    language: nl
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.funda.nl/"]
+    item_url_patterns: ["/detail/", "/koop/"]
+    notes: "オランダ住宅。"
+  - id: immoweb
+    name: Immoweb
+    base_url: https://www.immoweb.be/
+    country: BE
+    language: fr
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.immoweb.be/"]
+    item_url_patterns: ["/en/classified/", "/fr/annonce/"]
+    notes: "ベルギー住宅。"
+  - id: immobiliare-it
+    name: Immobiliare.it
+    base_url: https://www.immobiliare.it/
+    country: IT
+    language: it
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.immobiliare.it/"]
+    item_url_patterns: ["/annunci/", "/vendita-case/"]
+    notes: "イタリア住宅。"
+  - id: casa-it
+    name: Casa.it
+    base_url: https://www.casa.it/
+    country: IT
+    language: it
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.casa.it/"]
+    item_url_patterns: ["/immobili/", "/vendita/"]
+    notes: "イタリア住宅。"
+  - id: realestate-au
+    name: realestate.com.au
+    base_url: https://www.realestate.com.au/
+    country: AU
+    language: en
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.realestate.com.au/"]
+    item_url_patterns: ["/property-", "/buy/"]
+    notes: "豪州住宅。"
+  - id: domain-au
+    name: Domain
+    base_url: https://www.domain.com.au/
+    country: AU
+    language: en
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.domain.com.au/"]
+    item_url_patterns: ["/property-profile/", "/sale/"]
+    notes: "豪州住宅。"
+  - id: propertyguru-sg
+    name: PropertyGuru Singapore
+    base_url: https://www.propertyguru.com.sg/
+    country: SG
+    language: en
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.propertyguru.com.sg/"]
+    item_url_patterns: ["/listing/", "/property/"]
+    notes: "シンガポール住宅。"
+  - id: ddproperty-th
+    name: DDproperty
+    base_url: https://www.ddproperty.com/
+    country: TH
+    language: th
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.ddproperty.com/"]
+    item_url_patterns: ["/en/property/", "/listing/"]
+    notes: "タイ住宅。"
+  - id: dotproperty-th
+    name: Dot Property Thailand
+    base_url: https://www.dotproperty.co.th/
+    country: TH
+    language: en
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.dotproperty.co.th/"]
+    item_url_patterns: ["/property/", "/condo/"]
+    notes: "東南アジア物件。"
+  - id: fazwaz
+    name: FazWaz
+    base_url: https://www.fazwaz.com/
+    country: GLOBAL
+    language: en
+    categories: [residential-sale, investment, international]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.fazwaz.com/"]
+    item_url_patterns: ["/property-sales/", "/property/"]
+    notes: "海外投資・新築。"
+  - id: bayut
+    name: Bayut
+    base_url: https://www.bayut.com/
+    country: AE
+    language: en
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.bayut.com/"]
+    item_url_patterns: ["/property/details-", "/for-sale/"]
+    notes: "UAE住宅。"
+  - id: propertyfinder-ae
+    name: Property Finder UAE
+    base_url: https://www.propertyfinder.ae/
+    country: AE
+    language: en
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.propertyfinder.ae/"]
+    item_url_patterns: ["/en/plp/", "/en/property/"]
+    notes: "UAE住宅。"
+  - id: magicbricks
+    name: Magicbricks
+    base_url: https://www.magicbricks.com/
+    country: IN
+    language: en
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.magicbricks.com/"]
+    item_url_patterns: ["/propertyDetails/", "/property-for-sale/"]
+    notes: "インド住宅。"
+  - id: acres99
+    name: 99acres
+    base_url: https://www.99acres.com/
+    country: IN
+    language: en
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.99acres.com/"]
+    item_url_patterns: ["/property/", "/search/"]
+    notes: "インド住宅。"
+  - id: housing-com
+    name: Housing.com
+    base_url: https://housing.com/
+    country: IN
+    language: en
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://housing.com/"]
+    item_url_patterns: ["/in/buy/", "/rent/"]
+    notes: "インド住宅。"
+  - id: nobroker
+    name: NoBroker
+    base_url: https://www.nobroker.in/
+    country: IN
+    language: en
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.nobroker.in/"]
+    item_url_patterns: ["/property/", "/flats-for-rent/"]
+    notes: "インド住宅。"
+  - id: lamudi-ph
+    name: Lamudi Philippines
+    base_url: https://www.lamudi.com.ph/
+    country: PH
+    language: en
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.lamudi.com.ph/"]
+    item_url_patterns: ["/buy/", "/rent/", "/property/"]
+    notes: "フィリピン住宅。"
+  - id: rumah123
+    name: Rumah123
+    base_url: https://www.rumah123.com/
+    country: ID
+    language: id
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.rumah123.com/"]
+    item_url_patterns: ["/properti/", "/jual-beli-properti/"]
+    notes: "インドネシア住宅。"
+  - id: property24
+    name: Property24
+    base_url: https://www.property24.com/
+    country: ZA
+    language: en
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.property24.com/"]
+    item_url_patterns: ["/for-sale/", "/to-rent/"]
+    notes: "南アフリカ住宅。"
+  - id: daft
+    name: Daft.ie
+    base_url: https://www.daft.ie/
+    country: IE
+    language: en
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.daft.ie/"]
+    item_url_patterns: ["/for-sale/", "/for-rent/"]
+    notes: "アイルランド住宅。"
+  - id: hemnet
+    name: Hemnet
+    base_url: https://www.hemnet.se/
+    country: SE
+    language: sv
+    categories: [residential-sale]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.hemnet.se/"]
+    item_url_patterns: ["/bostad/", "/till-salu/"]
+    notes: "スウェーデン住宅。"
+  - id: finn-eiendom
+    name: FINN Eiendom
+    base_url: https://www.finn.no/realestate/
+    country: NO
+    language: no
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.finn.no/realestate/"]
+    item_url_patterns: ["/realestate/", "/ad.html"]
+    notes: "ノルウェー住宅。"
+  - id: boliga
+    name: Boliga
+    base_url: https://www.boliga.dk/
+    country: DK
+    language: da
+    categories: [residential-sale, market-data]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.boliga.dk/"]
+    item_url_patterns: ["/bolig/", "/salg/"]
+    notes: "デンマーク住宅。"
+  - id: properstar
+    name: Properstar
+    base_url: https://www.properstar.com/
+    country: GLOBAL
+    language: en
+    categories: [international, residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.properstar.com/"]
+    item_url_patterns: ["/listing/", "/property/"]
+    notes: "国際横断。"
+  - id: kyero
+    name: Kyero
+    base_url: https://www.kyero.com/
+    country: EU
+    language: en
+    categories: [international, residential-sale]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.kyero.com/"]
+    item_url_patterns: ["/en/property/", "/property/"]
+    notes: "欧州海外物件。"
+  - id: vivareal
+    name: VivaReal
+    base_url: https://www.vivareal.com.br/
+    country: BR
+    language: pt
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.vivareal.com.br/"]
+    item_url_patterns: ["/imovel/", "/venda/"]
+    notes: "ブラジル住宅。"
+  - id: zap-imoveis
+    name: Zap Imóveis
+    base_url: https://www.zapimoveis.com.br/
+    country: BR
+    language: pt
+    categories: [residential-sale, residential-rent]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 4
+    seed_urls: ["https://www.zapimoveis.com.br/"]
+    item_url_patterns: ["/imovel/", "/venda/"]
+    notes: "ブラジル住宅。"
+  - id: remax-global
+    name: RE/MAX Global
+    base_url: https://www.remax.com/
+    country: GLOBAL
+    language: en
+    categories: [international, residential-sale]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 5
+    seed_urls: ["https://www.remax.com/"]
+    item_url_patterns: ["/homes-for-sale/", "/real-estate-listings/"]
+    notes: "国際仲介ネットワーク。"
+  - id: sothebys-realty
+    name: Sotheby's International Realty
+    base_url: https://www.sothebysrealty.com/
+    country: GLOBAL
+    language: en
+    categories: [international, luxury, residential-sale]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 5
+    seed_urls: ["https://www.sothebysrealty.com/"]
+    item_url_patterns: ["/eng/sales/", "/property/"]
+    notes: "高級国際物件。"
+  - id: knight-frank
+    name: Knight Frank Properties
+    base_url: https://www.knightfrank.com/properties
+    country: GLOBAL
+    language: en
+    categories: [international, luxury, commercial, residential-sale]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 5
+    seed_urls: ["https://www.knightfrank.com/properties"]
+    item_url_patterns: ["/properties/", "/property-for-sale/"]
+    notes: "高級・商業。"
+  - id: savills
+    name: Savills Property Search
+    base_url: https://search.savills.com/
+    country: GLOBAL
+    language: en
+    categories: [international, luxury, commercial, residential-sale]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 5
+    seed_urls: ["https://search.savills.com/"]
+    item_url_patterns: ["/property-detail/", "/search/"]
+    notes: "高級・商業。"
+  - id: jll-property
+    name: JLL Property Search
+    base_url: https://property.jll.com/
+    country: GLOBAL
+    language: en
+    categories: [commercial, international]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 5
+    seed_urls: ["https://property.jll.com/"]
+    item_url_patterns: ["/listing/", "/property/"]
+    notes: "商業不動産。"
+  - id: colliers-property
+    name: Colliers Property Search
+    base_url: https://www.colliers.com/en/properties
+    country: GLOBAL
+    language: en
+    categories: [commercial, international]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 5
+    seed_urls: ["https://www.colliers.com/en/properties"]
+    item_url_patterns: ["/properties/", "/p-"]
+    notes: "商業不動産。"
