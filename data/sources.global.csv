@@ -1,0 +1,143 @@
+id,name,base_url,country,language,categories,review_status,scrape_strategy,priority,seed_url,item_url_patterns,notes
+compass-us,Compass,https://www.compass.com/,US,en,residential-sale;luxury,needs_review,generic_html,5,https://www.compass.com/,/homes-for-sale/;/listing/;property,US brokerage portal
+coldwellbanker-us,Coldwell Banker,https://www.coldwellbanker.com/,US,en,residential-sale;residential-rent,needs_review,generic_html,5,https://www.coldwellbanker.com/,/homes-for-sale/;/property/,US brokerage listings
+century21-us,Century 21 US,https://www.century21.com/,US,en,residential-sale;residential-rent,needs_review,generic_html,5,https://www.century21.com/,/property/;/real-estate/,US brokerage listings
+bhhs-us,Berkshire Hathaway HomeServices,https://www.bhhs.com/,US,en,residential-sale;luxury,needs_review,generic_html,5,https://www.bhhs.com/,/homes-for-sale/;/property/,US brokerage listings
+movoto,Movoto,https://www.movoto.com/,US,en,residential-sale,needs_review,generic_html,5,https://www.movoto.com/,/home/;/realestate/,US homes portal
+estately,Estately,https://www.estately.com/,US,en,residential-sale,needs_review,generic_html,5,https://www.estately.com/,/listings/info/,US homes portal
+rent-com,Rent.com,https://www.rent.com/,US,en,residential-rent,needs_review,generic_html,5,https://www.rent.com/,/apartments/;/houses/,US rental portal
+apartmentguide,Apartment Guide,https://www.apartmentguide.com/,US,en,residential-rent,needs_review,generic_html,5,https://www.apartmentguide.com/,/apartments/;/property/,US rental portal
+apartmentlist,Apartment List,https://www.apartmentlist.com/,US,en,residential-rent,needs_review,generic_html,5,https://www.apartmentlist.com/,/apartments/;/listing/,US rental portal
+zumper,Zumper,https://www.zumper.com/,US,en,residential-rent,needs_review,generic_html,5,https://www.zumper.com/,/apartments-for-rent/;/houses-for-rent/,Rental marketplace
+hotpads,HotPads,https://hotpads.com/,US,en,residential-rent,needs_review,generic_html,5,https://hotpads.com/,/apartments-for-rent/;/for-rent/,Rental listings
+padmapper,PadMapper,https://www.padmapper.com/,US,en,residential-rent,needs_review,generic_html,5,https://www.padmapper.com/,/apartments/;/building/,Rental map listings
+landwatch,LandWatch,https://www.landwatch.com/,US,en,land;residential-sale;investment,needs_review,generic_html,5,https://www.landwatch.com/,/property/;/land/,Land listings
+landandfarm,Land And Farm,https://www.landandfarm.com/,US,en,land;farm;investment,needs_review,generic_html,5,https://www.landandfarm.com/,/property/;/land/,Land and farm listings
+landsearch,LandSearch,https://www.landsearch.com/,US,en,land;residential-sale,needs_review,generic_html,5,https://www.landsearch.com/,/properties/;/land/,Land search
+auction-com,Auction.com,https://www.auction.com/,US,en,public-auction;foreclosure;investment,needs_review,generic_html,5,https://www.auction.com/,/details/;/property/,US auction listings
+xome,Xome,https://www.xome.com/,US,en,public-auction;foreclosure;residential-sale,needs_review,generic_html,5,https://www.xome.com/,/auction/;/homes/,Auction and homes
+hubzu,Hubzu,https://www.hubzu.com/,US,en,public-auction;foreclosure,needs_review,generic_html,5,https://www.hubzu.com/,/property/;/auction/,Auction platform
+foreclosure-com,Foreclosure.com,https://www.foreclosure.com/,US,en,foreclosure;investment,needs_review,generic_html,5,https://www.foreclosure.com/,/listing/;/property/,Foreclosure listings
+showcase-us,Showcase,https://www.showcase.com/,US,en,commercial;office;retail,needs_review,generic_html,5,https://www.showcase.com/,/property/;/commercial/,Commercial property
+cityfeet,CityFeet,https://www.cityfeet.com/,US,en,commercial;office;retail,needs_review,generic_html,5,https://www.cityfeet.com/,/property/;/commercial/,Commercial listings
+bizbuysell-real-estate,BizBuySell Real Estate,https://www.bizbuysell.com/,US,en,commercial;investment,needs_review,generic_html,5,https://www.bizbuysell.com/,/business-real-estate-for-sale/;/listing/,Business real estate
+reonomy,Reonomy,https://www.reonomy.com/,US,en,commercial;market-data,needs_review,metadata_only,5,https://www.reonomy.com/,/properties/;/property/,Commercial data platform
+costar,CoStar,https://www.costar.com/,US,en,commercial;market-data,needs_review,metadata_only,5,https://www.costar.com/,/properties/;/property/,Commercial data platform
+realtor-ca,Realtor Canada,https://www.realtor.ca/,CA,en,residential-sale;residential-rent,needs_review,generic_html,5,https://www.realtor.ca/,/real-estate/;/property/,Canadian listings
+zolo,Zolo,https://www.zolo.ca/,CA,en,residential-sale;residential-rent,needs_review,generic_html,5,https://www.zolo.ca/,/homes-for-sale/;/real-estate/,Canada homes
+housesigma,HouseSigma,https://housesigma.com/,CA,en,residential-sale;market-data,needs_review,generic_html,5,https://housesigma.com/,/web/en/house/,Canada homes and estimates
+point2homes,Point2Homes,https://www.point2homes.com/,CA,en,residential-sale;residential-rent;international,needs_review,generic_html,5,https://www.point2homes.com/,/homes-for-sale/;/apartments-for-rent/,International listings
+rentals-ca,Rentals.ca,https://rentals.ca/,CA,en,residential-rent,needs_review,generic_html,5,https://rentals.ca/,/rentals/;/apartments/,Canadian rentals
+condos-ca,Condos.ca,https://condos.ca/,CA,en,residential-sale;condo,needs_review,generic_html,5,https://condos.ca/,/condos-for-sale/;/buildings/,Condo portal
+rew-ca,REW,https://www.rew.ca/,CA,en,residential-sale;residential-rent,needs_review,generic_html,5,https://www.rew.ca/,/properties/;/rentals/,Western Canada listings
+royallepage,Royal LePage,https://www.royallepage.ca/,CA,en,residential-sale,needs_review,generic_html,5,https://www.royallepage.ca/,/en/property/;/homes/,Canada brokerage
+remax-ca,REMAX Canada,https://www.remax.ca/,CA,en,residential-sale,needs_review,generic_html,5,https://www.remax.ca/,/real-estate/;/property/,Canada brokerage
+primelocation,PrimeLocation,https://www.primelocation.com/,GB,en,residential-sale;residential-rent;luxury,needs_review,generic_html,5,https://www.primelocation.com/,/for-sale/;/to-rent/;/property/,UK portal
+placebuzz,Placebuzz,https://www.placebuzz.com/,GB,en,aggregator;residential-sale;residential-rent,needs_review,generic_html,5,https://www.placebuzz.com/,/property/;/for-sale/,UK aggregator
+openrent,OpenRent,https://www.openrent.co.uk/,GB,en,residential-rent,needs_review,generic_html,5,https://www.openrent.co.uk/,/property-to-rent/;/properties-to-rent/,UK rentals
+spareroom,Spareroom,https://www.spareroom.co.uk/,GB,en,residential-rent;room,needs_review,generic_html,5,https://www.spareroom.co.uk/,/flatshare/;/rooms-for-rent/,Room rentals
+gumtree-property-uk,Gumtree Property UK,https://www.gumtree.com/property,GB,en,residential-rent;residential-sale,needs_review,generic_html,5,https://www.gumtree.com/property,/property/;/houses-flats-for-rent/,Classified property
+nestoria-uk,Nestoria UK,https://www.nestoria.co.uk/,GB,en,aggregator;residential-sale;residential-rent,needs_review,generic_html,5,https://www.nestoria.co.uk/,/property/;/flat/,UK aggregator
+rent-ie,Rent.ie,https://www.rent.ie/,IE,en,residential-rent,needs_review,generic_html,5,https://www.rent.ie/,/rentals/;/houses-to-let/,Ireland rentals
+myhome-ie,MyHome Ireland,https://www.myhome.ie/,IE,en,residential-sale;residential-rent,needs_review,generic_html,5,https://www.myhome.ie/,/residential/;/property/,Ireland listings
+green-acres,Green Acres,https://www.green-acres.com/,FR,en,international;residential-sale;luxury,needs_review,generic_html,5,https://www.green-acres.com/,/property-for-sale/;/properties/,International European listings
+bellesdemeures,Belles Demeures,https://www.bellesdemeures.com/,FR,fr,luxury;residential-sale,needs_review,generic_html,5,https://www.bellesdemeures.com/,/annonces/;/vente/,France luxury
+logic-immo-fr,Logic-Immo,https://www.logic-immo.com/,FR,fr,residential-sale;residential-rent,needs_review,generic_html,5,https://www.logic-immo.com/,/annonces-immobilier/;/vente/,France listings
+pap-fr,PAP,https://www.pap.fr/,FR,fr,residential-sale;residential-rent,needs_review,generic_html,5,https://www.pap.fr/,/annonces/;/immobilier/,France direct listings
+leboncoin-immobilier,LeBonCoin Immobilier,https://www.leboncoin.fr/recherche?category=9,FR,fr,residential-sale;residential-rent,needs_review,generic_html,5,https://www.leboncoin.fr/recherche?category=9,/ad/;/ventes_immobilieres/,Classified real estate
+paruvendu-immo,ParuVendu Immobilier,https://www.paruvendu.fr/immobilier/,FR,fr,residential-sale;residential-rent,needs_review,generic_html,5,https://www.paruvendu.fr/immobilier/,/immobilier/;/annonce/,France listings
+immonet-de,Immonet,https://www.immonet.de/,DE,de,residential-sale;residential-rent,needs_review,generic_html,5,https://www.immonet.de/,/angebot/;/immobilien/,Germany listings
+kleinanzeigen-immobilien,Kleinanzeigen Immobilien,https://www.kleinanzeigen.de/s-immobilien/c195,DE,de,residential-sale;residential-rent,needs_review,generic_html,5,https://www.kleinanzeigen.de/s-immobilien/c195,/s-anzeige/;/immobilien/,Classified real estate
+meinestadt-immo,Meinestadt Immobilien,https://www.meinestadt.de/deutschland/immobilien,DE,de,residential-sale;residential-rent,needs_review,generic_html,5,https://www.meinestadt.de/deutschland/immobilien,/expose/;/immobilien/,Germany listings
+willhaben-immo,Willhaben Immobilien,https://www.willhaben.at/iad/immobilien,AT,de,residential-sale;residential-rent,needs_review,generic_html,5,https://www.willhaben.at/iad/immobilien,/iad/immobilien/d/;/immobilien/,Austria listings
+immobilienscout24-at,ImmobilienScout24 Austria,https://www.immobilienscout24.at/,AT,de,residential-sale;residential-rent,needs_review,generic_html,5,https://www.immobilienscout24.at/,/expose/;/immobilien/,Austria listings
+homegate-ch,Homegate,https://www.homegate.ch/,CH,de,residential-sale;residential-rent,needs_review,generic_html,5,https://www.homegate.ch/,/rent/;/buy/;/listing/,Switzerland listings
+immoscout24-ch,ImmoScout24 Switzerland,https://www.immoscout24.ch/,CH,de,residential-sale;residential-rent,needs_review,generic_html,5,https://www.immoscout24.ch/,/buy/;/rent/;/listing/,Switzerland listings
+comparis-immo,Comparis Immobilien,https://www.comparis.ch/immobilien,CH,de,aggregator;residential-sale;residential-rent,needs_review,generic_html,5,https://www.comparis.ch/immobilien,/immobilien/;/listing/,Switzerland aggregator
+idealista-pt,Idealista Portugal,https://www.idealista.pt/,PT,pt,residential-sale;residential-rent,needs_review,generic_html,5,https://www.idealista.pt/,/imovel/;/comprar-casas/,Portugal listings
+imovirtual,Imovirtual,https://www.imovirtual.com/,PT,pt,residential-sale;residential-rent,needs_review,generic_html,5,https://www.imovirtual.com/,/pt/anuncio/;/comprar/,Portugal listings
+casa-sapo,Casa Sapo,https://casa.sapo.pt/,PT,pt,residential-sale;residential-rent,needs_review,generic_html,5,https://casa.sapo.pt/,/imovel/;/comprar/,Portugal listings
+supercasa,SuperCasa,https://supercasa.pt/,PT,pt,residential-sale;residential-rent,needs_review,generic_html,5,https://supercasa.pt/,/comprar-casas/;/imovel/,Portugal listings
+idealista-it,Idealista Italy,https://www.idealista.it/,IT,it,residential-sale;residential-rent,needs_review,generic_html,5,https://www.idealista.it/,/immobile/;/vendita-case/,Italy listings
+gate-away,Gate Away,https://www.gate-away.com/,IT,en,international;residential-sale,needs_review,generic_html,5,https://www.gate-away.com/,/properties/;/property/,Italy international listings
+tecnocasa-it,Tecnocasa Italy,https://www.tecnocasa.it/,IT,it,residential-sale;residential-rent,needs_review,generic_html,5,https://www.tecnocasa.it/,/immobili/;/annunci/,Italy brokerage
+pisos-com,Pisos.com,https://www.pisos.com/,ES,es,residential-sale;residential-rent,needs_review,generic_html,5,https://www.pisos.com/,/inmueble/;/venta/,Spain listings
+habitaclia,Habitaclia,https://www.habitaclia.com/,ES,es,residential-sale;residential-rent,needs_review,generic_html,5,https://www.habitaclia.com/,/comprar/;/alquiler/,Spain listings
+yaencontre,Yaencontre,https://www.yaencontre.com/,ES,es,residential-sale;residential-rent,needs_review,generic_html,5,https://www.yaencontre.com/,/venta/;/alquiler/,Spain listings
+thinkspain,ThinkSpain,https://www.thinkspain.com/property-for-sale,ES,en,international;residential-sale,needs_review,generic_html,5,https://www.thinkspain.com/property-for-sale,/property-for-sale/;/property/,Spain international listings
+booli,Booli,https://www.booli.se/,SE,sv,residential-sale;market-data,needs_review,generic_html,5,https://www.booli.se/,/bostad/;/annons/,Sweden listings
+blocket-bostad,Blocket Bostad,https://bostad.blocket.se/,SE,sv,residential-rent;residential-sale,needs_review,generic_html,5,https://bostad.blocket.se/,/p/;/annons/,Sweden property
+bostad-direkt,Bostad Direkt,https://www.bostaddirekt.com/,SE,sv,residential-rent,needs_review,generic_html,5,https://www.bostaddirekt.com/,/objekt/;/bostad/,Sweden rentals
+oikotie,Oikotie,https://asunnot.oikotie.fi/,FI,fi,residential-sale;residential-rent,needs_review,generic_html,5,https://asunnot.oikotie.fi/,/myytavat-asunnot/;/vuokra-asunnot/,Finland listings
+etuovi,Etuovi,https://www.etuovi.com/,FI,fi,residential-sale,needs_review,generic_html,5,https://www.etuovi.com/,/kohde/;/myytavat-asunnot/,Finland listings
+boligsiden,Boligsiden,https://www.boligsiden.dk/,DK,da,residential-sale;market-data,needs_review,generic_html,5,https://www.boligsiden.dk/,/adresse/;/tilsalg/,Denmark listings
+boligportal,BoligPortal,https://www.boligportal.dk/,DK,da,residential-rent,needs_review,generic_html,5,https://www.boligportal.dk/,/lejebolig/;/rental/,Denmark rentals
+otodom,Otodom,https://www.otodom.pl/,PL,pl,residential-sale;residential-rent,needs_review,generic_html,5,https://www.otodom.pl/,/pl/oferta/;/sprzedaz/,Poland listings
+morizon,Morizon,https://www.morizon.pl/,PL,pl,residential-sale;residential-rent,needs_review,generic_html,5,https://www.morizon.pl/,/oferta/;/nieruchomosci/,Poland listings
+sreality,Sreality,https://www.sreality.cz/,CZ,cs,residential-sale;residential-rent,needs_review,generic_html,5,https://www.sreality.cz/,/detail/;/search/,Czech listings
+bezrealitky,Bezrealitky,https://www.bezrealitky.cz/,CZ,cs,residential-sale;residential-rent,needs_review,generic_html,5,https://www.bezrealitky.cz/,/nemovitosti-byty-domy/;/inzerat/,Czech direct listings
+ingatlan,Ingatlan,https://ingatlan.com/,HU,hu,residential-sale;residential-rent,needs_review,generic_html,5,https://ingatlan.com/,/elado/;/kiado/,Hungary listings
+imobiliare-ro,Imobiliare Romania,https://www.imobiliare.ro/,RO,ro,residential-sale;residential-rent,needs_review,generic_html,5,https://www.imobiliare.ro/,/vanzare/;/inchirieri/,Romania listings
+dubizzle-property,Dubizzle Property,https://www.dubizzle.com/,AE,en,residential-sale;residential-rent,needs_review,generic_html,5,https://www.dubizzle.com/,/property-for-sale/;/property-for-rent/,UAE classifieds
+houza,Houza,https://houza.com/,AE,en,residential-sale;residential-rent,needs_review,generic_html,5,https://houza.com/,/property/;/buy/,UAE listings
+propertyfinder-sa,Property Finder Saudi,https://www.propertyfinder.sa/,SA,en,residential-sale;residential-rent,needs_review,generic_html,5,https://www.propertyfinder.sa/,/en/plp/;/en/property/,Saudi listings
+bayut-sa,Bayut Saudi,https://www.bayut.sa/,SA,en,residential-sale;residential-rent,needs_review,generic_html,5,https://www.bayut.sa/,/en/property/;/for-sale/,Saudi listings
+aqarmap,Aqarmap,https://aqarmap.com.eg/,EG,ar,residential-sale;residential-rent,needs_review,generic_html,5,https://aqarmap.com.eg/,/en/listing/;/for-sale/,Egypt listings
+propertyturkey,Property Turkey,https://www.propertyturkey.com/,TR,en,international;residential-sale;investment,needs_review,generic_html,5,https://www.propertyturkey.com/,/real_estate/;/property/,Turkey international listings
+squareyards,Square Yards,https://www.squareyards.com/,IN,en,residential-sale;residential-rent;investment,needs_review,generic_html,5,https://www.squareyards.com/,/sale-property/;/property/,India listings
+makaan,Makaan,https://www.makaan.com/,IN,en,residential-sale;residential-rent,needs_review,generic_html,5,https://www.makaan.com/,/property/;/buy-property/,India listings
+commonfloor,CommonFloor,https://www.commonfloor.com/,IN,en,residential-sale;residential-rent,needs_review,generic_html,5,https://www.commonfloor.com/,/listing/;/property/,India listings
+proptiger,PropTiger,https://www.proptiger.com/,IN,en,residential-sale,needs_review,generic_html,5,https://www.proptiger.com/,/property/;/buy/,India listings
+iproperty-sg,iProperty Singapore,https://www.iproperty.com.sg/,SG,en,residential-sale;residential-rent,needs_review,generic_html,5,https://www.iproperty.com.sg/,/property/;/sale/,Singapore listings
+edgeprop-sg,EdgeProp Singapore,https://www.edgeprop.sg/,SG,en,residential-sale;residential-rent;market-data,needs_review,generic_html,5,https://www.edgeprop.sg/,/property/;/listing/,Singapore listings
+99co-sg,99.co Singapore,https://www.99.co/singapore,SG,en,residential-sale;residential-rent,needs_review,generic_html,5,https://www.99.co/singapore,/property/;/sale/,Singapore listings
+ohmyhome,Ohmyhome,https://ohmyhome.com/,SG,en,residential-sale;residential-rent,needs_review,generic_html,5,https://ohmyhome.com/,/en-sg/property/;/listings/,Singapore listings
+propertyguru-my,PropertyGuru Malaysia,https://www.propertyguru.com.my/,MY,en,residential-sale;residential-rent,needs_review,generic_html,5,https://www.propertyguru.com.my/,/property-listing/;/for-sale/,Malaysia listings
+iproperty-my,iProperty Malaysia,https://www.iproperty.com.my/,MY,en,residential-sale;residential-rent,needs_review,generic_html,5,https://www.iproperty.com.my/,/property/;/sale/,Malaysia listings
+edgeprop-my,EdgeProp Malaysia,https://www.edgeprop.my/,MY,en,residential-sale;residential-rent,needs_review,generic_html,5,https://www.edgeprop.my/,/listing/;/property/,Malaysia listings
+rumah-com,Rumah.com,https://www.rumah.com/,ID,id,residential-sale;residential-rent,needs_review,generic_html,5,https://www.rumah.com/,/properti/;/jual-beli-properti/,Indonesia listings
+lamudi-id,Lamudi Indonesia,https://www.lamudi.co.id/,ID,id,residential-sale;residential-rent,needs_review,generic_html,5,https://www.lamudi.co.id/,/newdevelopments/;/jual/,Indonesia listings
+99co-id,99.co Indonesia,https://www.99.co/id,ID,id,residential-sale;residential-rent,needs_review,generic_html,5,https://www.99.co/id,/properti/;/jual/,Indonesia listings
+batdongsan-vn,Batdongsan Vietnam,https://batdongsan.com.vn/,VN,vi,residential-sale;residential-rent,needs_review,generic_html,5,https://batdongsan.com.vn/,/ban-/;/cho-thue/,Vietnam listings
+nhatot,Nhà Tốt,https://www.nhatot.com/,VN,vi,residential-sale;residential-rent,needs_review,generic_html,5,https://www.nhatot.com/,/mua-ban-nha-dat/;/thue-nha-dat/,Vietnam listings
+spacious-hk,Spacious Hong Kong,https://www.spacious.hk/,HK,en,residential-sale;residential-rent,needs_review,generic_html,5,https://www.spacious.hk/,/en/property/;/rent/,Hong Kong listings
+squarefoot-hk,Squarefoot Hong Kong,https://www.squarefoot.com.hk/,HK,en,residential-sale;residential-rent,needs_review,generic_html,5,https://www.squarefoot.com.hk/,/property/;/en/,Hong Kong listings
+midland-hk,Midland Realty,https://www.midland.com.hk/,HK,zh,residential-sale;residential-rent,needs_review,generic_html,5,https://www.midland.com.hk/,/property/;/find-property/,Hong Kong brokerage
+centanet-hk,Centaline Property,https://hk.centanet.com/,HK,zh,residential-sale;residential-rent,needs_review,generic_html,5,https://hk.centanet.com/,/find-property/;/estate/,Hong Kong brokerage
+hse28,28Hse,https://www.28hse.com/,HK,zh,residential-sale;residential-rent,needs_review,generic_html,5,https://www.28hse.com/,/rent/;/buy/,Hong Kong listings
+five91-tw,591 Taiwan,https://www.591.com.tw/,TW,zh,residential-sale;residential-rent,needs_review,generic_html,5,https://www.591.com.tw/,/home/;/rent/,Taiwan listings
+housefun-tw,HouseFun Taiwan,https://buy.housefun.com.tw/,TW,zh,residential-sale,needs_review,generic_html,5,https://buy.housefun.com.tw/,/buy/;/house/,Taiwan listings
+yungching,Yungching Realty,https://www.yungching.com.tw/,TW,zh,residential-sale;residential-rent,needs_review,generic_html,5,https://www.yungching.com.tw/,/house/;/rent/,Taiwan brokerage
+zigbang,Zigbang,https://www.zigbang.com/,KR,ko,residential-rent;residential-sale,needs_review,generic_html,5,https://www.zigbang.com/,/home/;/items/,Korea listings
+dabang,Dabang,https://www.dabangapp.com/,KR,ko,residential-rent,needs_review,generic_html,5,https://www.dabangapp.com/,/room/;/list/,Korea rentals
+naver-land,Naver Land,https://land.naver.com/,KR,ko,residential-sale;residential-rent,needs_review,generic_html,5,https://land.naver.com/,/article/;/complexes/,Korea portal
+peterpan-kr,PeterPan Real Estate,https://www.peterpanz.com/,KR,ko,residential-rent,needs_review,generic_html,5,https://www.peterpanz.com/,/house/;/room/,Korea rentals
+oneroof-nz,OneRoof,https://www.oneroof.co.nz/,NZ,en,residential-sale;market-data,needs_review,generic_html,5,https://www.oneroof.co.nz/,/property/;/for-sale/,New Zealand listings
+trademe-property,TradeMe Property,https://www.trademe.co.nz/a/property,NZ,en,residential-sale;residential-rent,needs_review,generic_html,5,https://www.trademe.co.nz/a/property,/a/property/;/listing/,New Zealand marketplace
+homes-co-nz,Homes.co.nz,https://homes.co.nz/,NZ,en,residential-sale;market-data,needs_review,generic_html,5,https://homes.co.nz/,/address/;/property/,New Zealand property data
+inmuebles24,Inmuebles24,https://www.inmuebles24.com/,MX,es,residential-sale;residential-rent,needs_review,generic_html,5,https://www.inmuebles24.com/,/propiedades/;/inmuebles/,Mexico listings
+lamudi-mx,Lamudi Mexico,https://www.lamudi.com.mx/,MX,es,residential-sale;residential-rent,needs_review,generic_html,5,https://www.lamudi.com.mx/,/propiedad/;/inmuebles/,Mexico listings
+propiedades-mx,Propiedades Mexico,https://propiedades.com/,MX,es,residential-sale;residential-rent,needs_review,generic_html,5,https://propiedades.com/,/inmuebles/;/propiedad/,Mexico listings
+mercadolibre-inmuebles-mx,MercadoLibre Inmuebles Mexico,https://inmuebles.mercadolibre.com.mx/,MX,es,residential-sale;residential-rent,needs_review,generic_html,5,https://inmuebles.mercadolibre.com.mx/,/MLM-;/inmueble/,Mexico marketplace
+zonaprop,Zonaprop,https://www.zonaprop.com.ar/,AR,es,residential-sale;residential-rent,needs_review,generic_html,5,https://www.zonaprop.com.ar/,/propiedades/;/inmuebles/,Argentina listings
+argenprop,Argenprop,https://www.argenprop.com/,AR,es,residential-sale;residential-rent,needs_review,generic_html,5,https://www.argenprop.com/,/departamento/;/casa/,Argentina listings
+properati-ar,Properati Argentina,https://www.properati.com.ar/,AR,es,residential-sale;residential-rent,needs_review,generic_html,5,https://www.properati.com.ar/,/detalle/;/propiedad/,Argentina listings
+portalinmobiliario-cl,Portal Inmobiliario,https://www.portalinmobiliario.com/,CL,es,residential-sale;residential-rent,needs_review,generic_html,5,https://www.portalinmobiliario.com/,/venta/;/arriendo/,Chile listings
+toctoc,TOCTOC,https://www.toctoc.com/,CL,es,residential-sale;residential-rent,needs_review,generic_html,5,https://www.toctoc.com/,/propiedades/;/venta/,Chile listings
+fincaraiz,Finca Raiz,https://www.fincaraiz.com.co/,CO,es,residential-sale;residential-rent,needs_review,generic_html,5,https://www.fincaraiz.com.co/,/inmueble/;/venta/,Colombia listings
+metrocuadrado,Metrocuadrado,https://www.metrocuadrado.com/,CO,es,residential-sale;residential-rent,needs_review,generic_html,5,https://www.metrocuadrado.com/,/inmueble/;/venta/,Colombia listings
+urbania-pe,Urbania Peru,https://urbania.pe/,PE,es,residential-sale;residential-rent,needs_review,generic_html,5,https://urbania.pe/,/inmueble/;/venta/,Peru listings
+adondevivir,Adondevivir,https://www.adondevivir.com/,PE,es,residential-sale;residential-rent,needs_review,generic_html,5,https://www.adondevivir.com/,/propiedades/;/inmuebles/,Peru listings
+infocasas,InfoCasas,https://www.infocasas.com.uy/,UY,es,residential-sale;residential-rent,needs_review,generic_html,5,https://www.infocasas.com.uy/,/venta/;/alquiler/,Uruguay listings
+gallito-inmuebles,Gallito Inmuebles,https://www.gallito.com.uy/inmuebles,UY,es,residential-sale;residential-rent,needs_review,generic_html,5,https://www.gallito.com.uy/inmuebles,/inmuebles/;/alquiler/,Uruguay classifieds
+privateproperty-sa,Private Property South Africa,https://www.privateproperty.co.za/,ZA,en,residential-sale;residential-rent,needs_review,generic_html,5,https://www.privateproperty.co.za/,/for-sale/;/to-rent/,South Africa listings
+pamgolding,Pam Golding,https://www.pamgolding.co.za/,ZA,en,residential-sale;luxury,needs_review,generic_html,5,https://www.pamgolding.co.za/,/property-details/;/for-sale/,South Africa brokerage
+seeff,Seeff,https://www.seeff.com/,ZA,en,residential-sale;residential-rent,needs_review,generic_html,5,https://www.seeff.com/,/results/;/property/,South Africa brokerage
+buyrentkenya,BuyRentKenya,https://www.buyrentkenya.com/,KE,en,residential-sale;residential-rent,needs_review,generic_html,5,https://www.buyrentkenya.com/,/listings/;/property/,Kenya listings
+propertypro-ng,PropertyPro Nigeria,https://www.propertypro.ng/,NG,en,residential-sale;residential-rent,needs_review,generic_html,5,https://www.propertypro.ng/,/property/;/for-rent/,Nigeria listings
+nigeria-property-centre,Nigeria Property Centre,https://nigeriapropertycentre.com/,NG,en,residential-sale;residential-rent,needs_review,generic_html,5,https://nigeriapropertycentre.com/,/for-sale/;/for-rent/,Nigeria listings
+jiji-property-ng,Jiji Property Nigeria,https://jiji.ng/real-estate,NG,en,residential-sale;residential-rent,needs_review,generic_html,5,https://jiji.ng/real-estate,/real-estate/;/property/,Nigeria classifieds
+hutbay,Hutbay,https://www.hutbay.com/,NG,en,residential-sale;residential-rent,needs_review,generic_html,5,https://www.hutbay.com/,/property/;/houses/,Nigeria listings
+meqasa,Meqasa,https://meqasa.com/,GH,en,residential-sale;residential-rent,needs_review,generic_html,5,https://meqasa.com/,/house/;/for-sale/,Ghana listings
+tonaton-real-estate,Tonaton Real Estate,https://tonaton.com/c_real-estate,GH,en,residential-sale;residential-rent,needs_review,generic_html,5,https://tonaton.com/c_real-estate,/item/;/real-estate/,Ghana classifieds
+propertycloud-zw,Property Cloud Zimbabwe,https://www.property.co.zw/,ZW,en,residential-sale;residential-rent,needs_review,generic_html,5,https://www.property.co.zw/,/for-sale/;/to-rent/,Zimbabwe listings
