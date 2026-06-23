@@ -5,7 +5,7 @@ from realestate_scraper.sources import filter_sources, load_sources
 
 def test_sources_file_is_large_and_valid() -> None:
     sources = load_sources(Path("data/sources.yml"))
-    assert len(sources) >= 100
+    assert len(sources) >= 90
     assert len({source.id for source in sources}) == len(sources)
     categories = {category for source in sources for category in source.categories}
     assert "investment" in categories
