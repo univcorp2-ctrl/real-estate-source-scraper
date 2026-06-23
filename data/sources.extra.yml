@@ -1,0 +1,15 @@
+version: 1
+updated_at: "2026-06-23"
+sources:
+  - id: ielove-akiyabank
+    name: いえらぶ空き家バンク
+    base_url: https://www.ielove.co.jp/akiyabank/
+    country: JP
+    language: ja
+    categories: [vacant-home, residential-sale]
+    review_status: needs_review
+    scrape_strategy: generic_html
+    priority: 3
+    seed_urls: ["https://www.ielove.co.jp/akiyabank/"]
+    item_url_patterns: ["/akiyabank/", "/sale/"]
+    notes: "README表の空き家候補。個別規約・自治体情報の確認後に対象化。"
