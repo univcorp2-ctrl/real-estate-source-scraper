@@ -1,0 +1,69 @@
+version: 1
+updated_at: "2026-06-23"
+profiles:
+  - source_id: suumo
+    implementation_status: plugin_ready_needs_live_validation
+    plugin: suumo
+    robot_summary: "robots.txt has many Disallow rules for internal endpoints mobile paths printout paths parameterized sort/search URLs and API-like paths. Bingbot has Crawl-delay 30."
+    structure_summary: "Large residential portal with rent sale mansion detached house and land sections. Detail pages are normally table or dl style but many result and API paths are restricted or parameterized."
+    safe_next_step: "Run analyze-sites for the exact category and inspect allowed paths before include-needs-review."
+  - source_id: bit-courts
+    implementation_status: plugin_ready_public_source
+    plugin: bit_courts
+    robot_summary: "robots.txt must be checked live by the analyzer. Top page is public and contains search sale-result historical-data and schedule routes."
+    structure_summary: "The top page exposes regional search blocks public auction count new information sale result information historical-data search schedules and help links."
+    safe_next_step: "Start with top and search pages then store official metadata and source URLs."
+  - source_id: nta-koubai
+    implementation_status: plugin_ready_public_source
+    plugin: nta_koubai
+    robot_summary: "robots.txt must be checked live by the analyzer. Public categories are separated from login and e-Tax flows."
+    structure_summary: "Home redirects to auctionx public pages and exposes land/building categories schedules notices and public detail links."
+    safe_next_step: "Use public land/building category links only and never touch login or e-Tax paths."
+  - source_id: mlit-reinfolib
+    implementation_status: api_connector_skeleton
+    plugin: mlit_reinfolib
+    robot_summary: "Prefer official API and official downloads over HTML crawling. API use may require application or review."
+    structure_summary: "Official source for transaction price land price disaster urban planning and surrounding facility data. API manual documents official outputs."
+    safe_next_step: "Implement approved API key connector with MLIT_API_KEY stored outside git."
+  - source_id: rakumachi
+    implementation_status: plugin_ready_needs_review
+    plugin: rakumachi
+    robot_summary: "robots.txt must be checked live. Treat as needs_review and do not scrape without review."
+    structure_summary: "Investment-property portal with income-property listing pages by area/prefecture property type yield price and other filters."
+    safe_next_step: "Validate a public detail page manually then add CSS selectors for price yield and address."
+  - source_id: kenbiya
+    implementation_status: plugin_ready_needs_review
+    plugin: kenbiya
+    robot_summary: "robots.txt must be checked live. Treat as needs_review and do not scrape without review."
+    structure_summary: "Investment-property portal. Detail parser is label based and must be validated with live allowed sample pages."
+    safe_next_step: "Run analyze-sites --source-id kenbiya and update field selectors from output."
+  - source_id: lifull-homes
+    implementation_status: plugin_ready_needs_review
+    plugin: lifull_homes
+    robot_summary: "robots.txt must be checked live. Large commercial portal needs individual review."
+    structure_summary: "Residential sale/rent portal with investment and vacant-home related branches."
+    safe_next_step: "Prefer official partnership API or data-feed route for production."
+  - source_id: athome
+    implementation_status: plugin_ready_needs_review
+    plugin: athome
+    robot_summary: "robots.txt must be checked live. Large commercial portal needs individual review."
+    structure_summary: "Rent sale land office and investment categories. Parser supports common label based table and dl layouts."
+    safe_next_step: "Analyze public sample pages and add site specific CSS selectors."
+  - source_id: yahoo-realestate
+    implementation_status: plugin_ready_needs_review
+    plugin: yahoo_realestate
+    robot_summary: "robots.txt must be checked live. Dynamic pages may not be suitable for simple HTML collection."
+    structure_summary: "Rent used new land and market information routes."
+    safe_next_step: "Use only static public pages that pass robots checks."
+  - source_id: ur-net
+    implementation_status: plugin_ready_pilot
+    plugin: ur_rent
+    robot_summary: "robots.txt must be checked live. Public-housing style source still requires low-load review."
+    structure_summary: "Rental housing pages by region and property or room detail."
+    safe_next_step: "Run a low-limit pilot and inspect fields."
+  - source_id: mof-national-property
+    implementation_status: plugin_ready_public_source
+    plugin: mof_national_property
+    robot_summary: "robots.txt must be checked live. Public-sector sale information. PDF and table extraction should be separate."
+    structure_summary: "National property sale list and public notices."
+    safe_next_step: "Extract official table metadata first and add PDF parser only for explicitly linked official files."
