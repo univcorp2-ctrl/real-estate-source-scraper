@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import csv
 from pathlib import Path
 
 import yaml
@@ -10,7 +11,7 @@ ALLOWED_TO_SCRAPE_STATUSES = {"pilot", "official_public_data"}
 BLOCKED_STATUSES = {"blocked", "research_only"}
 
 
-def _load_payload(path: Path) -> list[dict]:
+def _load_yaml_payload(path: Path) -> list[dict]:
     with path.open("r", encoding="utf-8") as f:
         payload = yaml.safe_load(f)
     if not isinstance(payload, dict) or "sources" not in payload:
@@ -18,12 +19,53 @@ def _load_payload(path: Path) -> list[dict]:
     return list(payload["sources"] or [])
 
 
+def _load_csv_payload(path: Path) -> list[dict]:
+    rows: list[dict] = []
+    with path.open("r", encoding="utf-8-sig", newline="") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            if not row.get("id"):
+                continue
+            categories = [item.strip() for item in row.get("categories", "residential-sale").split(";") if item.strip()]
+            base_url = row["base_url"].strip()
+            rows.append(
+                {
+                    "id": row["id"].strip(),
+                    "name": row["name"].strip(),
+                    "base_url": base_url,
+                    "country": row.get("country", "GLOBAL").strip() or "GLOBAL",
+                    "language": row.get("language", "en").strip() or "en",
+                    "categories": categories,
+                    "review_status": row.get("review_status", "needs_review").strip() or "needs_review",
+                    "scrape_strategy": row.get("scrape_strategy", "generic_html").strip() or "generic_html",
+                    "priority": int(row.get("priority", "5") or 5),
+                    "seed_urls": [row.get("seed_url", "").strip() or base_url],
+                    "item_url_patterns": [item.strip() for item in row.get("item_url_patterns", "").split(";") if item.strip()],
+                    "notes": row.get("notes", "").strip(),
+                }
+            )
+    return rows
+
+
+def _inventory_files(path: Path) -> list[Path]:
+    files = [path]
+    for candidate in sorted(path.parent.glob("sources*.yml")):
+        if candidate != path and candidate not in files:
+            files.append(candidate)
+    for candidate in sorted(path.parent.glob("sources*.csv")):
+        if candidate not in files:
+            files.append(candidate)
+    return files
+
+
 def load_sources(path: str | Path) -> list[Source]:
     path = Path(path)
-    items = _load_payload(path)
-    extra_path = path.with_name(f"{path.stem}.extra{path.suffix}")
-    if extra_path.exists():
-        items.extend(_load_payload(extra_path))
+    items: list[dict] = []
+    for inventory_file in _inventory_files(path):
+        if inventory_file.suffix.lower() in {".yml", ".yaml"}:
+            items.extend(_load_yaml_payload(inventory_file))
+        elif inventory_file.suffix.lower() == ".csv":
+            items.extend(_load_csv_payload(inventory_file))
     sources = [Source.from_dict(item) for item in items]
     validate_sources(sources)
     return sources
