@@ -10,13 +10,21 @@ ALLOWED_TO_SCRAPE_STATUSES = {"pilot", "official_public_data"}
 BLOCKED_STATUSES = {"blocked", "research_only"}
 
 
-def load_sources(path: str | Path) -> list[Source]:
-    path = Path(path)
+def _load_payload(path: Path) -> list[dict]:
     with path.open("r", encoding="utf-8") as f:
         payload = yaml.safe_load(f)
     if not isinstance(payload, dict) or "sources" not in payload:
-        raise ValueError("sources.yml must contain top-level key: sources")
-    sources = [Source.from_dict(item) for item in payload["sources"]]
+        raise ValueError(f"{path} must contain top-level key: sources")
+    return list(payload["sources"] or [])
+
+
+def load_sources(path: str | Path) -> list[Source]:
+    path = Path(path)
+    items = _load_payload(path)
+    extra_path = path.with_name(f"{path.stem}.extra{path.suffix}")
+    if extra_path.exists():
+        items.extend(_load_payload(extra_path))
+    sources = [Source.from_dict(item) for item in items]
     validate_sources(sources)
     return sources
 
