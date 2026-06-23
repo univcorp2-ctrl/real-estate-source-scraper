@@ -1,0 +1,14 @@
+flowchart TD
+  U[User / GitHub Actions] --> CLI[CLI]
+  S[data/sources.yml] --> CLI
+  CLI --> AU[Audit]
+  CLI --> SC[Scrape]
+  AU --> R[robots.txt check]
+  SC --> F[Fetch seed pages]
+  F --> D[Discover detail links]
+  D --> E[Extract fields]
+  E --> N[Normalize Listing]
+  N --> O1[JSONL]
+  N --> O2[CSV]
+  N --> O3[Excel]
+  G[GitHub Actions] --> T[ruff + pytest]
